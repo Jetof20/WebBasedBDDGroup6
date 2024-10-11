@@ -528,3 +528,104 @@ java.net.NoRouteToHostException: No route to host: no further information
 2024-09-20 22:15:46,345 [Worker-71: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
 2024-09-20 22:15:46,399 [Worker-71: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text/target/classes
 2024-09-20 22:15:46,399 [Worker-71: Launching ServerLauncher] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.text.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.text.ide/target/classes
+2024-10-11 08:35:05,753 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-10-11 08:35:52,761 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT @ C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\pom.xml.
+2024-10-11 08:35:52,822 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT @ C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\pom.xml.
+2024-10-11 08:35:53,263 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.web:1.0.0-SNAPSHOT @ C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\pom.xml.
+2024-10-11 08:35:53,270 [Worker-5: Importing Maven projects] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:jar:1.0.0-SNAPSHOT is missing, no dependency information available
+2024-10-11 08:35:53,466 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.xtext: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.xtext/target/classes
+2024-10-11 08:35:54,533 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dk.sdu.bdd.xtext.web/src
+2024-10-11 08:35:54,535 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /dk.sdu.bdd.xtext.web/src overlaps with sources folder /dk.sdu.bdd.xtext.web/src
+2024-10-11 08:35:54,536 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /dk.sdu.bdd.xtext.web/src/test/java because it overlaps with /dk.sdu.bdd.xtext.web/src
+2024-10-11 08:35:54,538 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /dk.sdu.bdd.xtext.web/src/test/resources overlaps with sources folder /dk.sdu.bdd.xtext.web/src
+2024-10-11 08:35:54,658 [Worker-0: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT
+org.eclipse.core.runtime.CoreException: Could not resolve artifact dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:jar:sources:1.0.0-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-10-11 08:35:54,673 [Worker-0: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT
+org.eclipse.core.runtime.CoreException: Could not resolve artifact dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:jar:sources:1.0.0-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-10-11 08:35:54,782 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 3 project(s) in 5 sec
+2024-10-11 08:38:07,905 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.parent:1.0.0-SNAPSHOT @ C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\pom.xml.
+2024-10-11 08:38:07,976 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT @ C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\pom.xml.
+2024-10-11 08:38:08,032 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT @ C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\pom.xml.
+2024-10-11 08:38:08,184 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ui:1.0.0-SNAPSHOT @ C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\pom.xml.
+2024-10-11 08:38:08,372 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.web:1.0.0-SNAPSHOT @ C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\pom.xml.
+2024-10-11 08:38:08,482 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.xtext: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.xtext/target/classes
+2024-10-11 08:38:08,482 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.xtext.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.xtext.ide/target/classes
+2024-10-11 08:38:08,563 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.tests:1.0.0-SNAPSHOT @ C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\pom.xml.
+2024-10-11 08:38:08,606 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ui.tests:1.0.0-SNAPSHOT @ C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\pom.xml.
+2024-10-11 08:38:08,633 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.examples:1.0.0-SNAPSHOT @ C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.examples\pom.xml.
+2024-10-11 08:38:08,663 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.web:1.0.0-SNAPSHOT @ C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\pom.xml.
+2024-10-11 08:38:08,668 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.xtext: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.xtext/target/classes
+2024-10-11 08:38:08,668 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.xtext.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier  to /dk.sdu.bdd.xtext.ide/target/classes
+2024-10-11 08:38:09,543 [Worker-2: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dk.sdu.bdd.xtext.web/src
+2024-10-11 08:38:09,554 [Worker-2: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /dk.sdu.bdd.xtext.web/src overlaps with sources folder /dk.sdu.bdd.xtext.web/src
+2024-10-11 08:38:09,555 [Worker-2: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /dk.sdu.bdd.xtext.web/src/test/java because it overlaps with /dk.sdu.bdd.xtext.web/src
+2024-10-11 08:38:09,556 [Worker-2: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /dk.sdu.bdd.xtext.web/src/test/resources overlaps with sources folder /dk.sdu.bdd.xtext.web/src
+2024-10-11 08:38:09,750 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 8 project(s) in 2 sec
+2024-10-11 08:44:23,446 [Worker-31: Rebuilding] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
+2024-10-11 08:44:23,455 [Worker-31: Rebuilding] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
+2024-10-11 08:44:26,460 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-11 08:44:26,461 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\main\resources
+2024-10-11 08:44:26,464 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-11 08:44:26,464 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\test\resources
+2024-10-11 08:44:26,566 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-11 08:44:26,566 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.examples\src\main\resources
+2024-10-11 08:44:26,567 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-11 08:44:26,567 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.examples\src\test\resources
+2024-10-11 08:44:27,202 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-11 08:44:27,203 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\main\resources
+2024-10-11 08:44:27,204 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-11 08:44:27,204 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\test\resources
+2024-10-11 08:44:27,745 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-11 08:44:27,745 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\main\resources
+2024-10-11 08:44:27,746 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-11 08:44:27,746 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\test\resources
+2024-10-11 08:44:29,530 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-11 08:44:29,530 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\main\resources
+2024-10-11 08:44:29,531 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-11 08:44:29,531 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\test\resources
+2024-10-11 08:44:29,575 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-11 08:44:29,576 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\main\resources
+2024-10-11 08:44:29,578 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-10-11 08:44:29,579 [Worker-31: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\test\resources
+2024-10-11 08:44:30,337 [Worker-31: Rebuilding] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src to target\classes
+2024-10-11 08:44:30,344 [Worker-31: Rebuilding] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.web\src\test\resources
+2024-10-11 08:44:30,361 [Worker-32: Launching ServerLauncher (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.xtext: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.xtext/target/classes
+2024-10-11 08:44:30,362 [Worker-32: Launching ServerLauncher (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.xtext.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.xtext.ide/target/classes
+2024-10-11 08:44:30,455 [Worker-32: Launching ServerLauncher (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.xtext: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.xtext/target/classes
+2024-10-11 08:44:30,455 [Worker-32: Launching ServerLauncher (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.xtext.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.xtext.ide/target/classes
+2024-10-11 08:44:30,554 [Worker-32: Launching ServerLauncher (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.xtext: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.xtext/target/classes
+2024-10-11 08:44:30,555 [Worker-32: Launching ServerLauncher (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/dk.sdu.bdd.xtext.ide: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT with classifier null to /dk.sdu.bdd.xtext.ide/target/classes

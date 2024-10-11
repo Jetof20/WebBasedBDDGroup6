@@ -1,6 +1,5 @@
 package dk.sdu.bdd.xtext.scoping;
 
-import com.google.common.base.Objects;
 import com.google.common.collect.Iterables;
 import dk.sdu.bdd.xtext.bddDsl.ActionDef;
 import dk.sdu.bdd.xtext.bddDsl.BddDslPackage;
@@ -17,6 +16,7 @@ import dk.sdu.bdd.xtext.bddDsl.PropertyDef;
 import dk.sdu.bdd.xtext.bddDsl.StateName;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.function.Consumer;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
@@ -38,56 +38,56 @@ public class BddDslScopeProvider extends AbstractBddDslScopeProvider {
     IScope _xifexpression = null;
     EClassifier _eType = reference.getEType();
     EClass _stateName = BddDslPackage.eINSTANCE.getStateName();
-    boolean _equals = Objects.equal(_eType, _stateName);
+    boolean _equals = Objects.equals(_eType, _stateName);
     if (_equals) {
       _xifexpression = this.<StateName>scopeForDecEntityModelElements(context, StateName.class);
     } else {
       IScope _xifexpression_1 = null;
       EClassifier _eType_1 = reference.getEType();
       EClass _actionDef = BddDslPackage.eINSTANCE.getActionDef();
-      boolean _equals_1 = Objects.equal(_eType_1, _actionDef);
+      boolean _equals_1 = Objects.equals(_eType_1, _actionDef);
       if (_equals_1) {
         _xifexpression_1 = this.<ActionDef>scopeForDecEntityModelElements(context, ActionDef.class);
       } else {
         IScope _xifexpression_2 = null;
         EClassifier _eType_2 = reference.getEType();
         EClass _propertyDef = BddDslPackage.eINSTANCE.getPropertyDef();
-        boolean _equals_2 = Objects.equal(_eType_2, _propertyDef);
+        boolean _equals_2 = Objects.equals(_eType_2, _propertyDef);
         if (_equals_2) {
           _xifexpression_2 = this.<PropertyDef>scopeForDecEntityModelElements(context, PropertyDef.class);
         } else {
           IScope _xifexpression_3 = null;
           EClassifier _eType_3 = reference.getEType();
           EClass _imperativeActionDef = BddDslPackage.eINSTANCE.getImperativeActionDef();
-          boolean _equals_3 = Objects.equal(_eType_3, _imperativeActionDef);
+          boolean _equals_3 = Objects.equals(_eType_3, _imperativeActionDef);
           if (_equals_3) {
             _xifexpression_3 = this.<ImperativeActionDef>scopeForImpEntityModelElements(context, ImperativeActionDef.class);
           } else {
             IScope _xifexpression_4 = null;
             EClassifier _eType_4 = reference.getEType();
             EClass _imperativePropertyDef = BddDslPackage.eINSTANCE.getImperativePropertyDef();
-            boolean _equals_4 = Objects.equal(_eType_4, _imperativePropertyDef);
+            boolean _equals_4 = Objects.equals(_eType_4, _imperativePropertyDef);
             if (_equals_4) {
               _xifexpression_4 = this.<ImperativePropertyDef>scopeForImpEntityModelElements(context, ImperativePropertyDef.class);
             } else {
               IScope _xifexpression_5 = null;
               EClassifier _eType_5 = reference.getEType();
               EClass _imperativeStateName = BddDslPackage.eINSTANCE.getImperativeStateName();
-              boolean _equals_5 = Objects.equal(_eType_5, _imperativeStateName);
+              boolean _equals_5 = Objects.equals(_eType_5, _imperativeStateName);
               if (_equals_5) {
                 _xifexpression_5 = this.<ImperativeStateName>scopeForImpEntityModelElements(context, ImperativeStateName.class);
               } else {
                 IScope _xifexpression_6 = null;
                 EClassifier _eType_6 = reference.getEType();
                 EClass _imperativeEntityDef = BddDslPackage.eINSTANCE.getImperativeEntityDef();
-                boolean _equals_6 = Objects.equal(_eType_6, _imperativeEntityDef);
+                boolean _equals_6 = Objects.equals(_eType_6, _imperativeEntityDef);
                 if (_equals_6) {
                   _xifexpression_6 = Scopes.scopeFor(this.getAllImpEntityDefs(this.<Model>findAncestorOfType(context, Model.class)));
                 } else {
                   IScope _xifexpression_7 = null;
                   EClassifier _eType_7 = reference.getEType();
                   EClass _declarativeEntityDef = BddDslPackage.eINSTANCE.getDeclarativeEntityDef();
-                  boolean _equals_7 = Objects.equal(_eType_7, _declarativeEntityDef);
+                  boolean _equals_7 = Objects.equals(_eType_7, _declarativeEntityDef);
                   if (_equals_7) {
                     _xifexpression_7 = Scopes.scopeFor(this.getAllDecEntityDefs(this.<Model>findAncestorOfType(context, Model.class)));
                   } else {
@@ -213,7 +213,7 @@ public class BddDslScopeProvider extends AbstractBddDslScopeProvider {
       final Function1<EStructuralFeature, Boolean> _function = (EStructuralFeature it) -> {
         EClassifier _eType = it.getEType();
         EClass _declarativeEntityRef = BddDslPackage.eINSTANCE.getDeclarativeEntityRef();
-        return Boolean.valueOf(Objects.equal(_eType, _declarativeEntityRef));
+        return Boolean.valueOf(Objects.equals(_eType, _declarativeEntityRef));
       };
       final EStructuralFeature feature = IterableExtensions.<EStructuralFeature>findFirst(context.eClass().getEAllStructuralFeatures(), _function);
       DeclarativeEntityDef _xifexpression = null;
@@ -257,7 +257,7 @@ public class BddDslScopeProvider extends AbstractBddDslScopeProvider {
       final Function1<EStructuralFeature, Boolean> _function = (EStructuralFeature it) -> {
         EClassifier _eType = it.getEType();
         EClass _imperativeEntityRef = BddDslPackage.eINSTANCE.getImperativeEntityRef();
-        return Boolean.valueOf(Objects.equal(_eType, _imperativeEntityRef));
+        return Boolean.valueOf(Objects.equals(_eType, _imperativeEntityRef));
       };
       final EStructuralFeature feature = IterableExtensions.<EStructuralFeature>findFirst(context.eClass().getEAllStructuralFeatures(), _function);
       ImperativeEntityDef _xifexpression = null;

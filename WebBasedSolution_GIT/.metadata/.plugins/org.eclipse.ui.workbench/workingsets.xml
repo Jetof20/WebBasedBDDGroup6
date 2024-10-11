@@ -2,6 +2,16 @@
 <workingSetManager>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1726816256943_0" label="Java Main Sources" name="Java Main Sources"/>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1726816256959_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1728628549196_5" label="dk.sdu.bdd.xtext.parent" name="dk.sdu.bdd.xtext.parent">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dk.sdu.bdd.xtext.parent" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dk.sdu.bdd.xtext" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dk.sdu.bdd.xtext.ide" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dk.sdu.bdd.xtext.ui" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dk.sdu.bdd.xtext.web" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dk.sdu.bdd.xtext.tests" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dk.sdu.bdd.xtext.ui.tests" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dk.sdu.bdd.xtext.examples" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1726816258186_2" label="Window Working Set" name="Aggregate for window 1726816258186"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1726856865673_3" label="Window Working Set" name="Aggregate for window 1726856865673"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1726862045820_4" label="Window Working Set" name="Aggregate for window 1726862045820"/>
