@@ -42,13 +42,13 @@ def before_feature(context, feature):
     context.controller.moveJ(get_position("default"), get_speed(), get_acceleration())
 
 def after_feature(context, feature):
-    pass
+    print("After Feature")
 
 def before_scenario(context, scenario): 
-    pass
+    print("Before Scenario")
 
 def after_scenario(context, scenario):
-    pass
+    print("After Scenario")
 
 # Get coordinate-location based on configured name
 def get_position(name):
