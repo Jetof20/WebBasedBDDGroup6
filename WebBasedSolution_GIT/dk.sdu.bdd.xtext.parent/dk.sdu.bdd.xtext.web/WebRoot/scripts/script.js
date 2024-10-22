@@ -428,9 +428,10 @@ function runScenario() {
 }
 
 function set_robot_pos(x,y,z) {
-	element_X = document.getElementById("robot-vis").contentWindow.document.getElementsByClassName("number")[33].getElementsByClassName("c")[0].getElementsByTagName('input')[0]
-	element_Y = document.getElementById("robot-vis").contentWindow.document.getElementsByClassName("number")[34].getElementsByClassName("c")[0].getElementsByTagName('input')[0]
-	element_Z = document.getElementById("robot-vis").contentWindow.document.getElementsByClassName("number")[35].getElementsByClassName("c")[0].getElementsByTagName('input')[0]
+	iframe = document.getElementById("robot-vis").contentWindow
+	element_X = iframe.document.getElementsByClassName("number")[33].getElementsByClassName("c")[0].getElementsByTagName('input')[0]
+	element_Y = iframe.document.getElementsByClassName("number")[34].getElementsByClassName("c")[0].getElementsByTagName('input')[0]
+	element_Z = iframe.document.getElementsByClassName("number")[35].getElementsByClassName("c")[0].getElementsByTagName('input')[0]
 	
 	element_X.value = x
 	element_X.dispatchEvent(new Event('change'));
