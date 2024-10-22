@@ -44,7 +44,7 @@ const THREERobot = function (V_initial, limits, scene) {
     group.position.set(x, y, z)
     group.add(mesh)
 
-    console.log(min, max)
+    //console.log(min, max)
     // min = min / 180 * Math.PI
     // max = max / 180 * Math.PI
 
@@ -123,7 +123,7 @@ const THREERobot = function (V_initial, limits, scene) {
     x = link[0]
     y = link[1]
     z = link[2]
-    console.log(link[0], link[1], link[2])
+    //console.log(link[0], link[1], link[2])
     parentObject.add(linkGeo)
     parentObject = linkGeo
     this.robotBones.push(linkGeo)

@@ -13,15 +13,15 @@ define((require, exports, module) => {
   // const RemoteRobot = require('RemoteRobot')
 
   const logger = store => dispatch => (action, data) => {
-    console.group(`ACTION ${action}`)
+    //console.group(`ACTION ${action}`)
 
-    console.log(`action: %c${action}`, 'color:green')
-    console.log('data: ', data)
-    console.log('%cstore before: ', 'color:orange', store.getState())
+    //console.log(`action: %c${action}`, 'color:green')
+    //console.log('data: ', data)
+    //console.log('%cstore before: ', 'color:orange', store.getState())
 
     const newState = dispatch(action, data)
-    console.log('%cnew state: ', 'color:green', newState)
-    console.groupEnd()
+    //console.log('%cnew state: ', 'color:green', newState)
+    //console.groupEnd()
     return newState
   }
 

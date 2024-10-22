@@ -3534,3 +3534,222 @@ Contains: Missing dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:jar:sources:1.0.0-SNAPSH
 
 !ENTRY org.python.pydev.shared_core 4 4 2024-10-11 08:44:26.577
 !MESSAGE Info: Rebuilding internal caches: C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\.metadata\.plugins\org.eclipse.core.resources\.projects\dk.sdu.bdd.xtext.examples\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+!SESSION 2024-10-22 12:19:55.479 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=23
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=da_DK
+Framework arguments:  -product org.eclipse.epp.package.dsl.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.dsl.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-10-22 12:20:00.498
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-10-22 12:20:05.124
+!MESSAGE Logback config file: C:\Users\chris\Documents\GitHub\WebBasedBDDGroup6\WebBasedSolution_GIT\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-10-22 12:20:12.864
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\chris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-22 12:20:14.053
+!MESSAGE Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:325)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-22 12:20:14.054
+!MESSAGE Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310\DLLs
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310\DLLs
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:325)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-22 12:20:14.055
+!MESSAGE Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310\lib
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310\lib
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:325)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-22 12:20:14.056
+!MESSAGE Unable to track file that does not exist: C:\Users\ansil\AppData\Roaming\Python\Python310\site-packages
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: C:\Users\ansil\AppData\Roaming\Python\Python310\site-packages
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:325)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-22 12:20:14.057
+!MESSAGE Unable to track file that does not exist: C:\Users\ansil\AppData\Roaming\Python\Python310\site-packages\win32
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: C:\Users\ansil\AppData\Roaming\Python\Python310\site-packages\win32
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:325)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-22 12:20:14.057
+!MESSAGE Unable to track file that does not exist: C:\Users\ansil\AppData\Roaming\Python\Python310\site-packages\win32\lib
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: C:\Users\ansil\AppData\Roaming\Python\Python310\site-packages\win32\lib
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:325)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-22 12:20:14.058
+!MESSAGE Unable to track file that does not exist: C:\Users\ansil\AppData\Roaming\Python\Python310\site-packages\Pythonwin
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: C:\Users\ansil\AppData\Roaming\Python\Python310\site-packages\Pythonwin
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:325)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-22 12:20:14.059
+!MESSAGE Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310\lib\site-packages
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310\lib\site-packages
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:325)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-22 12:20:14.060
+!MESSAGE Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310\lib\site-packages\lewansoul_lx16a-0.1-py3.10.egg
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310\lib\site-packages\lewansoul_lx16a-0.1-py3.10.egg
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:325)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-22 12:20:14.060
+!MESSAGE Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310\lib\site-packages\lewansoul_lx16a_terminal-0.1-py3.10.egg
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310\lib\site-packages\lewansoul_lx16a_terminal-0.1-py3.10.egg
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:325)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-22 12:20:14.061
+!MESSAGE Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310\lib\site-packages\pyqt5-5.15.10-py3.10-win-amd64.egg
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310\lib\site-packages\pyqt5-5.15.10-py3.10-win-amd64.egg
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:325)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-22 12:20:14.062
+!MESSAGE Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310\lib\site-packages\pyqt5_qt5-5.15.2-py3.10-win-amd64.egg
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310\lib\site-packages\pyqt5_qt5-5.15.2-py3.10-win-amd64.egg
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:325)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-22 12:20:14.062
+!MESSAGE Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310\lib\site-packages\pyqt5_sip-12.13.0-py3.10-win-amd64.egg
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: C:\Users\ansil\AppData\Local\Programs\Python\Python310\lib\site-packages\pyqt5_sip-12.13.0-py3.10-win-amd64.egg
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:325)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 4 4 2024-10-22 12:20:44.164
+!MESSAGE java.io.IOException: Cannot run program "C:\Users\ansil\AppData\Local\Programs\Python\Python310\python.exe": CreateProcess error=2, Den angivne fil blev ikke fundet
+!STACK 0
+java.lang.RuntimeException: java.io.IOException: Cannot run program "C:\Users\ansil\AppData\Local\Programs\Python\Python310\python.exe": CreateProcess error=2, Den angivne fil blev ikke fundet
+	at org.python.pydev.ast.runners.SimpleRunner.run(SimpleRunner.java:352)
+	at org.python.pydev.ast.runners.SimpleRunner.run(SimpleRunner.java:280)
+	at org.python.pydev.ast.runners.SimpleRunner.runAndGetOutput(SimpleRunner.java:369)
+	at org.python.pydev.ast.runners.SimplePythonRunner.runAndGetOutputWithInterpreter(SimplePythonRunner.java:91)
+	at org.python.pydev.ast.interpreter_managers.PythonInterpreterManager.doCreateInterpreterInfo(PythonInterpreterManager.java:67)
+	at org.python.pydev.ast.interpreter_managers.PythonInterpreterManager.internalCreateInterpreterInfo(PythonInterpreterManager.java:43)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.createInterpreterInfo(AbstractInterpreterManager.java:329)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManager$CreateInterpreterInfoCallback.createInterpreterInfo(SyncSystemModulesManager.java:172)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManager.updateStructures(SyncSystemModulesManager.java:278)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:234)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Cannot run program "C:\Users\ansil\AppData\Local\Programs\Python\Python310\python.exe": CreateProcess error=2, Den angivne fil blev ikke fundet
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at java.base/java.lang.Runtime.exec(Runtime.java:681)
+	at org.python.pydev.shared_core.process.ProcessUtils.createProcess(ProcessUtils.java:113)
+	at org.python.pydev.ast.runners.SimpleRunner.createProcess(SimpleRunner.java:52)
+	at org.python.pydev.ast.runners.SimpleRunner.run(SimpleRunner.java:350)
+	... 10 more
+Caused by: java.io.IOException: CreateProcess error=2, Den angivne fil blev ikke fundet
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:500)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	... 15 more

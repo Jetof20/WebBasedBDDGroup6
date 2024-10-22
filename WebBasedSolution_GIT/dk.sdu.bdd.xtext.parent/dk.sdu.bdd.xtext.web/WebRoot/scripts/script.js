@@ -1,3 +1,5 @@
+
+
 function readFile() {
 	let input = document.getElementById('file-input')
 	let file = input.files[0]
@@ -423,6 +425,31 @@ function runScenario() {
       alert('Error running scenario.');
     }
   });
+}
+
+function set_robot_pos(x,y,z) {
+	element_X = document.getElementById("robot-vis").contentWindow.document.getElementsByClassName("number")[33].getElementsByClassName("c")[0].getElementsByTagName('input')[0]
+	element_Y = document.getElementById("robot-vis").contentWindow.document.getElementsByClassName("number")[34].getElementsByClassName("c")[0].getElementsByTagName('input')[0]
+	element_Z = document.getElementById("robot-vis").contentWindow.document.getElementsByClassName("number")[35].getElementsByClassName("c")[0].getElementsByTagName('input')[0]
+	
+	element_X.value = x
+	element_X.dispatchEvent(new Event('change'));
+	element_Y.value = y
+	element_Y.dispatchEvent(new Event('change'));
+	element_Z.value = z
+	element_Z.dispatchEvent(new Event('change'));
+	console.log("Pos changed to "+x+","+y+","+z)
+}
+
+function runSimulation() {
+	count = 0
+	let intervalId = setInterval(() => {
+		set_robot_pos(count,count,count)
+		count=count + 0.1;
+		if (count >= 10) {
+		  clearInterval(intervalId);
+		}
+	}, 100); 
 }
 
 
