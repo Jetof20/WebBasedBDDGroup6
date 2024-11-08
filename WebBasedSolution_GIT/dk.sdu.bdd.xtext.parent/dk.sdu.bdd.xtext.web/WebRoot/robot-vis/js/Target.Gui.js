@@ -74,7 +74,7 @@ define((require, exports, module) => {
     targetStore.dispatch('CHANGE_FOLLOW_TARGET', helper.followTarget)
   })
 
-  targetGUI.add(helper.position, 'x').step(0.1).onChange(() => {
+  targetGUI.add(helper.position, 'x').step(0.01).onChange(() => {
     targetStore.dispatch('TARGET_CHANGE_TARGET', {
       position: {
         x: helper.position.x,
@@ -82,7 +82,7 @@ define((require, exports, module) => {
     })
   })
 
-  targetGUI.add(helper.position, 'y').step(0.1).onChange(() => {
+  targetGUI.add(helper.position, 'y').step(0.01).onChange(() => {
     targetStore.dispatch('TARGET_CHANGE_TARGET', {
       position: {
         y: helper.position.y,
@@ -90,7 +90,7 @@ define((require, exports, module) => {
     })
   })
 
-  targetGUI.add(helper.position, 'z').step(0.1).onChange(() => {
+  targetGUI.add(helper.position, 'z').step(0.01).onChange(() => {
     targetStore.dispatch('TARGET_CHANGE_TARGET', {
       position: {
         z: helper.position.z,

@@ -62,7 +62,7 @@ define((require, exports, module) => {
   const anglesGui = gui.addFolder('angles')
   let i = 0
   for (const key in anglesDeg) {
-    anglesGui.add(anglesDeg, key).min(jointLimits[`J${i}`][0] * RAD_TO_DEG).max(jointLimits[`J${i++}`][1] * RAD_TO_DEG).step(1).listen().onChange(() => {
+    anglesGui.add(anglesDeg, key).min(jointLimits[`J${i}`][0] * RAD_TO_DEG).max(jointLimits[`J${i++}`][1] * RAD_TO_DEG).step(0.1).listen().onChange(() => {
       const anglesRad = {}
       for (const key in anglesDeg) {
         if (anglesDeg.hasOwnProperty(key)) {
@@ -88,7 +88,7 @@ define((require, exports, module) => {
         if (limit) {
           // gui.remember(jointLimitsDeg[joint])
 
-          (j => jointFolder.add(jointLimitsDeg[j], limit).name((limit == 0) ? 'min' : 'max').min(-360).max(360).step(1).onChange(() => {
+          (j => jointFolder.add(jointLimitsDeg[j], limit).name((limit == 0) ? 'min' : 'max').min(-360).max(360).step(0.1).onChange(() => {
             limts_rad = {}
             limts_rad[j] = [
               jointLimitsDeg[j][0] * DEG_TO_RAD,

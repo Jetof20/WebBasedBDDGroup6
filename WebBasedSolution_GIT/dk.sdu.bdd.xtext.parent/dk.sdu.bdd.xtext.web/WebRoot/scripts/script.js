@@ -427,30 +427,53 @@ function runScenario() {
   });
 }
 
-function set_robot_pos(x,y,z) {
-	iframe = document.getElementById("robot-vis").contentWindow
-	element_X = iframe.document.getElementsByClassName("number")[33].getElementsByClassName("c")[0].getElementsByTagName('input')[0]
-	element_Y = iframe.document.getElementsByClassName("number")[34].getElementsByClassName("c")[0].getElementsByTagName('input')[0]
-	element_Z = iframe.document.getElementsByClassName("number")[35].getElementsByClassName("c")[0].getElementsByTagName('input')[0]
-	
-	element_X.value = x
-	element_X.dispatchEvent(new Event('change'));
-	element_Y.value = y
-	element_Y.dispatchEvent(new Event('change'));
-	element_Z.value = z
-	element_Z.dispatchEvent(new Event('change'));
-	console.log("Pos changed to "+x+","+y+","+z)
+function lerp(a,b,alpha) {
+	return a + alpha * (b - a)
+}
+function lerp_array(a,b,alpha) {
+	c = [0,0,0,0,0,0]
+	for (i = 0; i < 6;i++) {
+		c[i] = lerp(a[i],b[i],alpha)
+	}
+	return c
 }
 
-function runSimulation() {
-	count = 0
+
+function set_robot_angle(angle_array,html_offset=33) {
+	console.log(angle_array.length)
+	if (angle_array.length != 6) {
+		console.log("Angle Array not set properlly")
+		return
+	}
+	iframe = document.getElementById("robot-vis").contentWindow
+	input_array = iframe.document.getElementsByClassName("number")
+	for (i = 0; i < 6;i++) {
+		A = input_array[html_offset+i].getElementsByClassName("c")[0].getElementsByTagName('input')[0]
+		A.value = angle_array[i]
+		A.dispatchEvent(new Event('change'))
+	}
+}
+
+function runSimulation() {	
+	arr_a = [6,6,10,-3.14,0,0]
+	arr_b = [-10,7,10,-1.57,0,0]
+	alpha = 0
+	
+	// For debugging
+	iframe = document.getElementById("robot-vis").contentWindow
+	input_array = iframe.document.getElementsByClassName("number")
+	console.log(input_array)
+	
 	let intervalId = setInterval(() => {
-		set_robot_pos(count,count,count)
-		count=count + 0.1;
-		if (count >= 10) {
-		  clearInterval(intervalId);
+		alpha = alpha + 0.01
+		new_pos = lerp_array(arr_a,arr_b,alpha)
+		//set_robot_angle(new_pos,html_offset=15) // Use angles
+		set_robot_angle(new_pos,html_offset=33) // use IK
+		
+		if (alpha >= 1) {
+			clearInterval(intervalId)
 		}
-	}, 100); 
+	}, 10);
 }
 
 
