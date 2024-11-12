@@ -120,9 +120,6 @@ function displayEditor(currEditor, newEditor, currBlockly, newBlockly) {
 }
 
 function switchEditor(e) {
-	if (e.target.disabled)
-		return;
-
 	var b = ""
 	if (e.target != currentTab) {
 		removeSelectionBorder(currentTab)
@@ -420,7 +417,7 @@ function runScenario() {
     method: 'POST',
   }).then(response => {
     if (response.ok) {
-      alert('Scenario running...');
+      //alert('Scenario running...');
     } else {
       alert('Error running scenario.');
     }
