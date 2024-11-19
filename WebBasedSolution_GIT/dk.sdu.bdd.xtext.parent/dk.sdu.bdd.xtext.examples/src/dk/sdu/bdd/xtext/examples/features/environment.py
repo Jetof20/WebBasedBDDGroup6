@@ -17,10 +17,18 @@ with open(json_file_path) as f:
     data = json.load(f)
     
     
-"""
 
 def before_all(context):
     print("Setting up Environment...")
+    path = os.path.join(os.path.dirname(__file__))
+    for i in range(8):
+        path = os.path.abspath(os.path.join(path, os.pardir))
+    
+    path = os.path.join(path,"dk.sdu.bdd.xtext.web","WebRoot","bddlogs.txt")    
+    open(path, 'w').close()  # clear file
+
+
+"""
 
 def before_feature(context, feature): 
     context.controller.moveJ(get_position("default"), get_speed(), get_acceleration())
