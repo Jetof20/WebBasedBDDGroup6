@@ -8,17 +8,29 @@ import os
 @then('the position {prep} the robot "{identifier}" is "{position}"')
 @given('the position {prep} the robot "{identifier}" is "{position}"')
 def step_given(context, identifier : str, position, prep):
-
-    joint_positions = env.get_position(position)
-    if(context.receiver.getActualQ() != joint_positions):
-        context.controller.moveJ(joint_positions, env.get_speed(), env.get_acceleration())
+    print("001")
+    pass
 
 
 @when('the robot "{identifier}" moves to position "{position}"')
 def step_when(context, identifier : str, position):
+    print("002")
+    pass
 
-    joint_position = env.get_position(position)
-    controller = context.controller
-    
-    controller.moveJ(joint_position, env.get_speed(), env.get_acceleration())
 
+@given(u'the object "Object" is fixed')
+def step_impl(context):
+    print("003")
+    pass
+
+
+@when(u'the robot "Robot" grabs the object "Object"')
+def step_impl(context):
+    print("004")
+    pass
+
+
+@then(u'the object "Object" is placed')
+def step_impl(context):
+    print("005")
+    pass

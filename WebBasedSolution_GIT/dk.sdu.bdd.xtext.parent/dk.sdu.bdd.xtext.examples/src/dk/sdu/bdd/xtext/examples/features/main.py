@@ -9,7 +9,7 @@ def main():
     path = os.path.join(os.path.dirname(__file__))
     
     # Starts test
-    behave_main([path] + ["--stop"])
+    behave_main([path] + ["--stop", "--no-capture"])
 
 if __name__ == '__main__':
     main()

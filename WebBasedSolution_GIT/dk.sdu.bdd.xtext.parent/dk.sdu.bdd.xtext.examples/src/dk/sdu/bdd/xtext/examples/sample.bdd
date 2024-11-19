@@ -1,5 +1,7 @@
-model Sample
-    declarative entity robot { actions: moves, grabs properties: position }
-    declarative entity object { states: fixed, placed}
-    declarative entity DMP_parameter { properties: value}
-    declarative entity trajectory { properties: duration}
+model Scenarios
+Scenario: "Pick and Place trajectory"
+Given the object "Object" is fixed
+When the robot "Robot" moves to position "POS10"
+And the robot "Robot" grabs the object "Object"
+And the robot "Robot" moves to position "Bucket"
+Then the object "Object" is placed 
