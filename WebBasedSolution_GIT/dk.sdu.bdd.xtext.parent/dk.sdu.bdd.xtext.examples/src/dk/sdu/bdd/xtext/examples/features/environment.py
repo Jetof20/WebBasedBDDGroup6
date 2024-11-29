@@ -4,6 +4,7 @@ from msilib.schema import Feature
 from pyexpat import features
 from behave import fixture
 from behave.model import Scenario
+import time
 
 # Dynamically find the path to Environment.json
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -25,45 +26,18 @@ def before_all(context):
         path = os.path.abspath(os.path.join(path, os.pardir))
     
     path = os.path.join(path,"dk.sdu.bdd.xtext.web","WebRoot","bddlogs.txt")    
-    open(path, 'w').close()  # clear file
+    file = open(path, "w")  # append mode
+    file.write("BEGIN "+str(int(time.time())))
+    file.write("\n")
+    file.close()
 
-
-"""
-
-def before_feature(context, feature): 
-    context.controller.moveJ(get_position("default"), get_speed(), get_acceleration())
-
-def after_feature(context, feature):
-    print("After Feature")
-
-def before_scenario(context, scenario): 
-    print("Before Scenario")
-
-def after_scenario(context, scenario):
-    print("After Scenario")
-
-# Get coordinate-location based on configured name
-def get_position(name):
-    locations = data["Positions"]
-    coordinate = locations[name]
-
-    return coordinate
-
-# Get speed based naming (if not set, returns moderately)
-def get_speed(identifier="moderate"):
-    speed = data["Speeds"][identifier]["speed"]
-    return speed
-
-# Get acceleration based naming (if not set, returns moderately)
-def get_acceleration(identifier="moderate"):
-    acceleration = data["Speeds"][identifier]["acceleration"]
-    return acceleration
-
-# Get IP-address of robot based on configured name
-def get_robot_ip():
-    ip = data["Robot"]["IP"]
-    return ip
-
-# Get coordinate-location based
-
-"""
+def after_all(context):
+    print("Close Environment...")
+    path = os.path.join(os.path.dirname(__file__))
+    for i in range(8):
+        path = os.path.abspath(os.path.join(path, os.pardir))
+    
+    path = os.path.join(path,"dk.sdu.bdd.xtext.web","WebRoot","bddlogs.txt")    
+    file = open(path, "a")  # append mode
+    file.write("END")
+    file.close()

@@ -389,7 +389,6 @@ function saveScenario() {
   });
 }
 
-
 function saveEntities() {
   // Get the current scenario content from the appropriate editor
   const editor = getCurrentAceEditor(); // Assuming this function gets the active Ace editor
@@ -414,17 +413,28 @@ function saveEntities() {
   });
 }
 
+async function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-function runScenario() {
-  fetch('/run-scenario', {
-    method: 'POST',
-  }).then(response => {
-    if (response.ok) {
-      alert('Scenario running...');
-    } else {
-      alert('Error running scenario.');
-    }
-  });
+async function runScenario() {
+  document.getElementById('run-scenario').disabled = true;
+  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  const currentTimeInSeconds = Math.floor(Date.now() / 1000);
+  const response = await fetch('/run-scenario', {method: 'POST'})
+  if (!response.ok) {
+    alert('Error running scenario.');
+  }
+  await sleep(1000)
+  const robot_code = await fetch('/bddlogs.txt')
+  if (!robot_code.ok) {
+    alert('Error running scenario.');
+  }
+  const robot_code_text = await robot_code.text()
+  console.log(robot_code_text)
+  
+  await run_robot_code(robot_code_text)
+  document.getElementById('run-scenario').disabled = false;
 }
 
 function lerp(a,b,alpha) {
@@ -439,8 +449,56 @@ function lerp_array(a,b,alpha) {
 }
 
 
+async function run_robot_code(text) {
+	const text_clean = text.replace(/\r/g, "");
+	const lines = text_clean.split("\n");
+	const instructions = lines.map(line => line.split(" "));
+	let current_angle = [10,10,10,-3.14,0,0]
+	
+	
+	for (l = 0; l < instructions.length;l++) {
+		instruct = instructions[l][0]
+		argument = instructions[l][1]
+		second_argument = ""
+		if (instructions[l].length >= 3) {
+			second_argument = instructions[l][2]
+		} 
+		
+		console.log(instructions[l])
+		
+		if (instruct == "BEGIN") {
+			compile_time = parseInt(argument)
+			current_time = Math.floor(Date.now() / 1000);
+			time_diff = Math.abs(compile_time > current_time)
+			console.log(time_diff)
+			
+		}
+		if (instruct == "MOVE") {
+			argument = argument + ",-3.14,0,0"
+			new_angle = argument.split(',').map(Number)
+			speed = 10
+			if (second_argument != "") {
+				speed = parseInt(second_argument)
+			}
+			await move_robot_to_angle(current_angle,new_angle,html_offset=33,speed)
+			current_angle = new_angle
+		}
+		if (instruct == "ERR") {
+			alert("Error: "+argument)
+		}
+	}
+}
+
+async function move_robot_to_angle(old_angle,angle_array,html_offset=33,speed=10) {
+	console.log("MOVING ROBOT TO"+angle_array+" WITH SPEED "+speed)
+	for (t = 0; t < 1; t += 0.001*speed) {
+		new_pos = lerp_array(old_angle,angle_array,t)
+		set_robot_angle(new_pos,html_offset)
+		await sleep(10)
+	}
+}
+
 function set_robot_angle(angle_array,html_offset=33) {
-	console.log(angle_array.length)
 	if (angle_array.length != 6) {
 		console.log("Angle Array not set properlly")
 		return

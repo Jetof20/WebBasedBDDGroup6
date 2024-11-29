@@ -1,6 +1,9 @@
-
 model Sample
 declarative entity robot {
 actions: moves, grabs
 properties: position }
 declarative entity object { states: fixed, placed}
+declarative entity DMP_parameter { properties: value}
+declarative entity trajectory { properties: duration}
+          
+          

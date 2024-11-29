@@ -19,36 +19,46 @@ def write_line(line):
 @then('the position {prep} the robot "{identifier}" is "{position}"')
 @given('the position {prep} the robot "{identifier}" is "{position}"')
 def step_given(context, identifier : str, position, prep):
-    
-    print("001")
     pass
 
 
 @when('the robot "{identifier}" moves to position "{position}"')
 def step_when(context, identifier : str, position):
-    print("002")
     pattern = r"^-?\d+(\.\d+)?,-?\d+(\.\d+)?,-?\d+(\.\d+)?$"
     if not re.match(pattern,position):
+        write_line("ERR wrong_position_format_given\n")
         assert false
     write_line("MOVE "+position+"\n")
     pass
 
+@when('the robot "{identifier}" moves to position "{position}" with speed {speed}')
+def step_when(context, identifier : str, position, speed):
+    pattern = r"^-?\d+(\.\d+)?,-?\d+(\.\d+)?,-?\d+(\.\d+)?$"
+    if not re.match(pattern,position):
+        write_line("ERR wrong_position_format_given\n")
+        assert false
+    if not speed.isdigit():
+        write_line("ERR invalid_speed_use_a_number\n")
+        assert false
+        
+    
+    write_line("MOVE "+position+" "+speed+"\n")
+    pass
 
 @given('the object "{obj_identifier}" is fixed')
 def step_impl(context,obj_identifier : str):
-    print("[BDD 003] Defining '"+obj_identifier+"' as an active object")
     context.object = obj_identifier
 
 
 @when('the robot "{identifier}" grabs the object "{obj_identifier}"')
 def step_impl(context,identifier : str,obj_identifier : str):
-    print("[BDD 004] Grabbing '"+obj_identifier+"'")
     if (context.object != obj_identifier):
+        write_line("ERR wrong_object_grabbed\n")
         assert False
 
-
+@when('the object "{obj_identifier}" is placed')
 @then('the object "{obj_identifier}" is placed')
 def step_impl(context,obj_identifier : str ):
-    print("[BDD 005] Placing '"+obj_identifier+"'")
     if (context.object != obj_identifier):
+        write_line("ERR wrong_object_placed\n")
         assert False
