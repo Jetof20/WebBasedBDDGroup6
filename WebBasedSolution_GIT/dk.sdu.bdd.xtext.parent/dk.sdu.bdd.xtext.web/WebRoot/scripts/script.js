@@ -434,7 +434,9 @@ async function runScenario() {
   console.log(robot_code_text)
   
   await run_robot_code(robot_code_text)
+  await sleep(500)
   document.getElementById('run-scenario').disabled = false;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function lerp(a,b,alpha) {
