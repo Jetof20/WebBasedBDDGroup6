@@ -403,7 +403,6 @@ function saveEntities() {
     body: JSON.stringify({ content: scenarioContent }), // Send the scenario content as JSON
   }).then(response => {
     if (response.ok) {
-      alert('Entities saved successfully!'); // Notify the user of success
     } else {
       alert('Error saving entities.'); // Notify the user of an error
     }
@@ -419,7 +418,7 @@ async function sleep(ms) {
 
 async function runScenario() {
   document.getElementById('run-scenario').disabled = true;
-  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  //window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
   const currentTimeInSeconds = Math.floor(Date.now() / 1000);
   const response = await fetch('/run-scenario', {method: 'POST'})
   if (!response.ok) {
@@ -436,7 +435,7 @@ async function runScenario() {
   await run_robot_code(robot_code_text)
   await sleep(500)
   document.getElementById('run-scenario').disabled = false;
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  //window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function lerp(a,b,alpha) {
@@ -536,4 +535,19 @@ function runSimulation() {
 	}, 10);
 }
 
-
+var robotVisible = true
+function switchEditor() {
+	if (robotVisible == undefined) {
+		robotVisible = true
+	}
+	console.log(robotVisible)
+	if (robotVisible) {
+		robotVisible = false
+		document.getElementById("robot-vis-frame").style.display = "none";
+		document.getElementById("blockly-editor").style.display = "block";
+	} else {
+		robotVisible = true
+		document.getElementById("robot-vis-frame").style.display = "block";
+		document.getElementById("blockly-editor").style.display = "none";
+	}
+}
